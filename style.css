@@ -292,10 +292,10 @@ a {
 .menu-title .menu-button.active {
   color: var(--sub-color);
 }
-.menu-title .menu-button:hover{
+.menu-title .menu-button:hover {
   color: var(--sub-color);
 }
-.food-items{
+.food-items {
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -303,7 +303,7 @@ a {
   padding: 20px 15px;
   position: relative;
 }
-.food-items::before{
+.food-items::before {
   content: "";
   display: block;
   position: absolute;
@@ -312,27 +312,34 @@ a {
   bottom: 0;
   border: 1px dashed var(--main-color);
 }
-.food-items:hover .food-item p{
+.food-items:hover .food-item p {
   color: var(--sub-color);
 }
-.food-items:hover .food-price p{
+.food-items:hover .food-price p {
   color: var(--text-color);
 }
-.food-item{
+.food-item {
   display: flex;
   align-items: center;
 }
-.food-item img{
+.food-item img {
   width: 100px;
-  margin-right: 25px ;
+  margin-right: 25px;
 }
-.food-item p{
+.food-item p {
   color: var(--text-color);
   transition: all 0.3s ease-in;
   font-size: 25px;
 }
-.food-price p{
+.food-price p {
   color: var(--sub-color);
   transition: all 0.3s ease-in;
   font-size: 25px;
+}
+.menu-item-content {
+  display: none;
+}
+.menu-item-content.active {
+  display: flex;
+  flex-wrap: wrap;
 }
